@@ -1,0 +1,224 @@
+[0m23:00:16.309169 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C082F33B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C094F9C40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C050EB4A0>]}
+
+
+============================== 23:00:16.313931 | 1a13a624-5aec-4206-8724-c8719973a1d0 ==============================
+[0m23:00:16.313931 [info ] [MainThread]: Running with dbt=1.10.13
+[0m23:00:16.314879 [debug] [MainThread]: running dbt with arguments {'use_colors': 'True', 'target_path': 'None', 'profiles_dir': 'C:\\Users\\kerlo\\.dbt', 'printer_width': '80', 'no_print': 'None', 'warn_error': 'None', 'indirect_selection': 'eager', 'partial_parse': 'True', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'log_path': 'logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'use_experimental_parser': 'False', 'version_check': 'True', 'quiet': 'False', 'introspect': 'True', 'empty': 'None', 'log_cache_events': 'False', 'debug': 'False', 'log_format': 'default', 'invocation_command': 'dbt debug', 'cache_selected_only': 'False', 'write_json': 'True'}
+[0m23:00:16.338495 [info ] [MainThread]: dbt version: 1.10.13
+[0m23:00:16.338495 [info ] [MainThread]: python version: 3.12.0
+[0m23:00:16.339495 [info ] [MainThread]: python path: d:\my files\projects\Code\project depi\project\.venv\Scripts\python.exe
+[0m23:00:16.340497 [info ] [MainThread]: os info: Windows-11-10.0.22631-SP0
+[0m23:00:16.691324 [info ] [MainThread]: Using profiles dir at C:\Users\kerlo\.dbt
+[0m23:00:16.692323 [info ] [MainThread]: Using profiles.yml file at C:\Users\kerlo\.dbt\profiles.yml
+[0m23:00:16.693321 [info ] [MainThread]: Using dbt_project.yml file at D:\my files\projects\Code\project depi\project\dbt_project.yml
+[0m23:00:16.693321 [info ] [MainThread]: adapter type: sqlserver
+[0m23:00:16.694323 [info ] [MainThread]: adapter version: 1.9.0
+[0m23:00:16.695324 [info ] [MainThread]: Configuration:
+[0m23:00:16.695324 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m23:00:16.696321 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m23:00:16.696321 [info ] [MainThread]: Required dependencies:
+[0m23:00:16.697321 [debug] [MainThread]: Executing "git --help"
+[0m23:00:16.727183 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m23:00:16.727718 [debug] [MainThread]: STDERR: "b''"
+[0m23:00:16.727718 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m23:00:16.728729 [info ] [MainThread]: Connection:
+[0m23:00:16.729731 [info ] [MainThread]:   server: traffic-project22.database.windows.net
+[0m23:00:16.730732 [info ] [MainThread]:   database: traffic
+[0m23:00:16.730732 [info ] [MainThread]:   schema: dbt_dev
+[0m23:00:16.731732 [info ] [MainThread]:   UID: kero
+[0m23:00:16.732736 [info ] [MainThread]:   client_id: None
+[0m23:00:16.733735 [info ] [MainThread]:   authentication: CLI
+[0m23:00:16.734731 [info ] [MainThread]:   encrypt: True
+[0m23:00:16.734731 [info ] [MainThread]:   trust_cert: False
+[0m23:00:16.735734 [info ] [MainThread]:   retries: 3
+[0m23:00:16.737245 [info ] [MainThread]:   login_timeout: 0
+[0m23:00:16.738254 [info ] [MainThread]:   query_timeout: 0
+[0m23:00:16.738254 [info ] [MainThread]:   trace_flag: False
+[0m23:00:16.739261 [info ] [MainThread]:   port: 1433
+[0m23:00:16.740264 [info ] [MainThread]: Registered adapter: sqlserver=1.9.0
+[0m23:00:17.001427 [debug] [MainThread]: Acquiring new sqlserver connection 'debug'
+[0m23:00:17.001427 [debug] [MainThread]: Using sqlserver connection "debug"
+[0m23:00:17.002428 [debug] [MainThread]: On debug: select 1 as id
+[0m23:00:17.002428 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:00:17.002428 [debug] [MainThread]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=traffic-project22.database.windows.net;Database=traffic;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.9.3;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m23:00:21.830831 [debug] [MainThread]: fabric adapter: Got a retryable error when attempting to open a sqlserver connection.
+3 attempts remaining. Retrying in 1 seconds.
+Error:
+('28000', "[28000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Login failed for user '<token-identified principal>'. The server is not currently configured to accept this token. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 18 for SQL Server]Invalid connection string attribute (0); [28000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Login failed for user '<token-identified principal>'. The server is not currently configured to accept this token. (18456); [28000] [Microsoft][ODBC Driver 18 for SQL Server]Invalid connection string attribute (0)")
+[0m23:00:22.832165 [debug] [MainThread]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=traffic-project22.database.windows.net;Database=traffic;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.9.3;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m23:00:23.847354 [debug] [MainThread]: fabric adapter: Got a retryable error when attempting to open a sqlserver connection.
+2 attempts remaining. Retrying in 1 seconds.
+Error:
+('28000', "[28000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Login failed for user '<token-identified principal>'. The server is not currently configured to accept this token. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 18 for SQL Server]Invalid connection string attribute (0); [28000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Login failed for user '<token-identified principal>'. The server is not currently configured to accept this token. (18456); [28000] [Microsoft][ODBC Driver 18 for SQL Server]Invalid connection string attribute (0)")
+[0m23:00:24.848789 [debug] [MainThread]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=traffic-project22.database.windows.net;Database=traffic;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.9.3;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m23:00:25.797220 [debug] [MainThread]: fabric adapter: Got a retryable error when attempting to open a sqlserver connection.
+1 attempts remaining. Retrying in 1 seconds.
+Error:
+('28000', "[28000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Login failed for user '<token-identified principal>'. The server is not currently configured to accept this token. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 18 for SQL Server]Invalid connection string attribute (0); [28000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Login failed for user '<token-identified principal>'. The server is not currently configured to accept this token. (18456); [28000] [Microsoft][ODBC Driver 18 for SQL Server]Invalid connection string attribute (0)")
+[0m23:00:26.798292 [debug] [MainThread]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=traffic-project22.database.windows.net;Database=traffic;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.9.3;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m23:00:27.751805 [debug] [MainThread]: fabric adapter: Error running SQL: select 1 as id
+[0m23:00:27.752760 [debug] [MainThread]: fabric adapter: Rolling back transaction.
+[0m23:00:27.752760 [debug] [MainThread]: On debug: No close available on handle
+[0m23:00:27.753760 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m23:00:27.753760 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m23:00:27.754761 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <D:\my files\projects\Code\project depi\project\dbt_project.yml> not found
+
+[0m23:00:27.755761 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  ('28000', "[28000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Login failed for user '<token-identified principal>'. The server is not currently configured to accept this token. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 18 for SQL Server]Invalid connection string attribute (0); [28000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Login failed for user '<token-identified principal>'. The server is not currently configured to accept this token. (18456); [28000] [Microsoft][ODBC Driver 18 for SQL Server]Invalid connection string attribute (0)")
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m23:00:27.757269 [debug] [MainThread]: Command `dbt debug` failed at 23:00:27.757269 after 11.57 seconds
+[0m23:00:27.757269 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m23:00:27.758278 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C0AD4D370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C0A95F530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C0AB48A40>]}
+[0m23:00:27.758278 [debug] [MainThread]: Flushing usage events
+[0m23:00:29.379398 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:06:17.511057 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E8E271B4A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E8E67A3350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E8E5DC3A40>]}
+
+
+============================== 23:06:17.515084 | b97ad924-3330-444e-beba-59e0dfbea85e ==============================
+[0m23:06:17.515084 [info ] [MainThread]: Running with dbt=1.10.13
+[0m23:06:17.517058 [debug] [MainThread]: running dbt with arguments {'write_json': 'True', 'log_format': 'default', 'cache_selected_only': 'False', 'use_colors': 'True', 'profiles_dir': 'C:\\Users\\kerlo\\.dbt', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'use_experimental_parser': 'False', 'version_check': 'True', 'quiet': 'False', 'introspect': 'True', 'empty': 'None', 'log_cache_events': 'False', 'debug': 'False', 'no_print': 'None', 'invocation_command': 'dbt debug', 'printer_width': '80', 'target_path': 'None'}
+[0m23:06:17.541149 [info ] [MainThread]: dbt version: 1.10.13
+[0m23:06:17.541149 [info ] [MainThread]: python version: 3.12.0
+[0m23:06:17.542150 [info ] [MainThread]: python path: d:\my files\projects\Code\project depi\project\.venv\Scripts\python.exe
+[0m23:06:17.542150 [info ] [MainThread]: os info: Windows-11-10.0.22631-SP0
+[0m23:06:17.819921 [info ] [MainThread]: Using profiles dir at C:\Users\kerlo\.dbt
+[0m23:06:17.820921 [info ] [MainThread]: Using profiles.yml file at C:\Users\kerlo\.dbt\profiles.yml
+[0m23:06:17.821922 [info ] [MainThread]: Using dbt_project.yml file at D:\my files\projects\Code\project depi\project\dbt_project.yml
+[0m23:06:17.822921 [info ] [MainThread]: adapter type: sqlserver
+[0m23:06:17.822921 [info ] [MainThread]: adapter version: 1.9.0
+[0m23:06:17.823923 [info ] [MainThread]: Configuration:
+[0m23:06:17.823923 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m23:06:17.824922 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m23:06:17.824922 [info ] [MainThread]: Required dependencies:
+[0m23:06:17.825922 [debug] [MainThread]: Executing "git --help"
+[0m23:06:17.857980 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m23:06:17.858980 [debug] [MainThread]: STDERR: "b''"
+[0m23:06:17.859980 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m23:06:17.860980 [info ] [MainThread]: Connection:
+[0m23:06:17.861984 [info ] [MainThread]:   server: traffic-project22.database.windows.net
+[0m23:06:17.862984 [info ] [MainThread]:   database: traffic
+[0m23:06:17.863984 [info ] [MainThread]:   schema: dbt_dev
+[0m23:06:17.864986 [info ] [MainThread]:   UID: kero
+[0m23:06:17.866983 [info ] [MainThread]:   client_id: None
+[0m23:06:17.868209 [info ] [MainThread]:   authentication: CLI
+[0m23:06:17.869206 [info ] [MainThread]:   encrypt: True
+[0m23:06:17.869206 [info ] [MainThread]:   trust_cert: False
+[0m23:06:17.870206 [info ] [MainThread]:   retries: 3
+[0m23:06:17.871216 [info ] [MainThread]:   login_timeout: 0
+[0m23:06:17.872213 [info ] [MainThread]:   query_timeout: 0
+[0m23:06:17.874208 [info ] [MainThread]:   trace_flag: False
+[0m23:06:17.874208 [info ] [MainThread]:   port: 1433
+[0m23:06:17.875204 [info ] [MainThread]: Registered adapter: sqlserver=1.9.0
+[0m23:06:18.123875 [debug] [MainThread]: Acquiring new sqlserver connection 'debug'
+[0m23:06:18.123875 [debug] [MainThread]: Using sqlserver connection "debug"
+[0m23:06:18.124876 [debug] [MainThread]: On debug: select 1 as id
+[0m23:06:18.124876 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:06:18.124876 [debug] [MainThread]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=traffic-project22.database.windows.net;Database=traffic;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.9.3;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m23:06:20.189098 [debug] [MainThread]: fabric adapter: Got a retryable error when attempting to open a sqlserver connection.
+3 attempts remaining. Retrying in 1 seconds.
+Error:
+('28000', "[28000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Login failed for user '<token-identified principal>'. The server is not currently configured to accept this token. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 18 for SQL Server]Invalid connection string attribute (0); [28000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Login failed for user '<token-identified principal>'. The server is not currently configured to accept this token. (18456); [28000] [Microsoft][ODBC Driver 18 for SQL Server]Invalid connection string attribute (0)")
+[0m23:06:21.190400 [debug] [MainThread]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=traffic-project22.database.windows.net;Database=traffic;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.9.3;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m23:06:22.167700 [debug] [MainThread]: fabric adapter: Got a retryable error when attempting to open a sqlserver connection.
+2 attempts remaining. Retrying in 1 seconds.
+Error:
+('28000', "[28000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Login failed for user '<token-identified principal>'. The server is not currently configured to accept this token. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 18 for SQL Server]Invalid connection string attribute (0); [28000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Login failed for user '<token-identified principal>'. The server is not currently configured to accept this token. (18456); [28000] [Microsoft][ODBC Driver 18 for SQL Server]Invalid connection string attribute (0)")
+[0m23:06:23.169650 [debug] [MainThread]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=traffic-project22.database.windows.net;Database=traffic;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.9.3;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m23:06:24.165484 [debug] [MainThread]: fabric adapter: Got a retryable error when attempting to open a sqlserver connection.
+1 attempts remaining. Retrying in 1 seconds.
+Error:
+('28000', "[28000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Login failed for user '<token-identified principal>'. The server is not currently configured to accept this token. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 18 for SQL Server]Invalid connection string attribute (0); [28000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Login failed for user '<token-identified principal>'. The server is not currently configured to accept this token. (18456); [28000] [Microsoft][ODBC Driver 18 for SQL Server]Invalid connection string attribute (0)")
+[0m23:06:25.167633 [debug] [MainThread]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=traffic-project22.database.windows.net;Database=traffic;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.9.3;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m23:06:26.035884 [debug] [MainThread]: fabric adapter: Error running SQL: select 1 as id
+[0m23:06:26.037389 [debug] [MainThread]: fabric adapter: Rolling back transaction.
+[0m23:06:26.037389 [debug] [MainThread]: On debug: No close available on handle
+[0m23:06:26.038396 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m23:06:26.039396 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m23:06:26.040396 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <D:\my files\projects\Code\project depi\project\dbt_project.yml> not found
+
+[0m23:06:26.041395 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  ('28000', "[28000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Login failed for user '<token-identified principal>'. The server is not currently configured to accept this token. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 18 for SQL Server]Invalid connection string attribute (0); [28000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Login failed for user '<token-identified principal>'. The server is not currently configured to accept this token. (18456); [28000] [Microsoft][ODBC Driver 18 for SQL Server]Invalid connection string attribute (0)")
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m23:06:26.044395 [debug] [MainThread]: Command `dbt debug` failed at 23:06:26.044395 after 8.67 seconds
+[0m23:06:26.044395 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m23:06:26.045395 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E8E6C9C860>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E8E6EC6E40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E8E84A0980>]}
+[0m23:06:26.045395 [debug] [MainThread]: Flushing usage events
+[0m23:06:27.324407 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:06:50.457081 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019C8AA9A5A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019C877CB4A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019C89323080>]}
+
+
+============================== 23:06:50.462329 | 155e4184-c6e7-497b-9ddb-cefbb93a356a ==============================
+[0m23:06:50.462329 [info ] [MainThread]: Running with dbt=1.10.13
+[0m23:06:50.463309 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'cache_selected_only': 'False', 'write_json': 'True', 'profiles_dir': 'C:\\Users\\kerlo\\.dbt', 'use_colors': 'True', 'warn_error': 'None', 'static_parser': 'True', 'partial_parse': 'True', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'log_path': 'logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'indirect_selection': 'eager', 'version_check': 'True', 'use_experimental_parser': 'False', 'introspect': 'True', 'quiet': 'False', 'empty': 'None', 'log_cache_events': 'False', 'debug': 'False', 'no_print': 'None', 'invocation_command': 'dbt debug', 'printer_width': '80', 'target_path': 'None'}
+[0m23:06:50.483397 [info ] [MainThread]: dbt version: 1.10.13
+[0m23:06:50.484396 [info ] [MainThread]: python version: 3.12.0
+[0m23:06:50.485408 [info ] [MainThread]: python path: d:\my files\projects\Code\project depi\project\.venv\Scripts\python.exe
+[0m23:06:50.485408 [info ] [MainThread]: os info: Windows-11-10.0.22631-SP0
+[0m23:06:50.755438 [info ] [MainThread]: Using profiles dir at C:\Users\kerlo\.dbt
+[0m23:06:50.755438 [info ] [MainThread]: Using profiles.yml file at C:\Users\kerlo\.dbt\profiles.yml
+[0m23:06:50.756942 [info ] [MainThread]: Using dbt_project.yml file at D:\my files\projects\Code\project depi\project\dbt_project.yml
+[0m23:06:50.757948 [info ] [MainThread]: adapter type: sqlserver
+[0m23:06:50.757948 [info ] [MainThread]: adapter version: 1.9.0
+[0m23:06:50.758949 [info ] [MainThread]: Configuration:
+[0m23:06:50.759965 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m23:06:50.760955 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m23:06:50.761342 [info ] [MainThread]: Required dependencies:
+[0m23:06:50.762352 [debug] [MainThread]: Executing "git --help"
+[0m23:06:50.790621 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m23:06:50.791638 [debug] [MainThread]: STDERR: "b''"
+[0m23:06:50.791638 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m23:06:50.792723 [info ] [MainThread]: Connection:
+[0m23:06:50.793621 [info ] [MainThread]:   server: traffic-project22.database.windows.net
+[0m23:06:50.794623 [info ] [MainThread]:   database: traffic
+[0m23:06:50.794623 [info ] [MainThread]:   schema: dbt_dev
+[0m23:06:50.795625 [info ] [MainThread]:   UID: kero
+[0m23:06:50.795625 [info ] [MainThread]:   client_id: None
+[0m23:06:50.797132 [info ] [MainThread]:   authentication: sql
+[0m23:06:50.797132 [info ] [MainThread]:   encrypt: True
+[0m23:06:50.798140 [info ] [MainThread]:   trust_cert: False
+[0m23:06:50.799139 [info ] [MainThread]:   retries: 3
+[0m23:06:50.800140 [info ] [MainThread]:   login_timeout: 0
+[0m23:06:50.801143 [info ] [MainThread]:   query_timeout: 0
+[0m23:06:50.803156 [info ] [MainThread]:   trace_flag: False
+[0m23:06:50.803156 [info ] [MainThread]:   port: 1433
+[0m23:06:50.804138 [info ] [MainThread]: Registered adapter: sqlserver=1.9.0
+[0m23:06:51.065432 [debug] [MainThread]: Acquiring new sqlserver connection 'debug'
+[0m23:06:51.066943 [debug] [MainThread]: Using sqlserver connection "debug"
+[0m23:06:51.067489 [debug] [MainThread]: On debug: select 1 as id
+[0m23:06:51.068499 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:06:51.069500 [debug] [MainThread]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=traffic-project22.database.windows.net,1433;Database=traffic;UID={kero};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.9.0
+[0m23:06:52.811153 [debug] [MainThread]: sqlserver adapter: Connected to db: traffic
+[0m23:06:52.975041 [debug] [MainThread]: SQL status: OK in 2.000 seconds
+[0m23:06:52.977050 [debug] [MainThread]: On debug: Close
+[0m23:06:52.977050 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m23:06:52.978259 [info ] [MainThread]: [31m1 check failed:[0m
+[0m23:06:52.979257 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <D:\my files\projects\Code\project depi\project\dbt_project.yml> not found
+
+[0m23:06:52.980260 [debug] [MainThread]: Command `dbt debug` failed at 23:06:52.980260 after 2.70 seconds
+[0m23:06:52.980260 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m23:06:52.980260 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019C8A9FB020>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019C8BCF3A10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019C8D198500>]}
+[0m23:06:52.981256 [debug] [MainThread]: Flushing usage events
+[0m23:06:54.589744 [debug] [MainThread]: An error was encountered while trying to flush usage events

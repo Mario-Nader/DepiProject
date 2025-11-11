@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: azure_sql_traffic  # This matches the first part of your source macro
+    database: 'traffic'
+    schema: 'dbo'              # <-- dbt gets the schema from here
+    tables:
+      - name: 'TrafficLog'     # This matches the second part of your source macro
