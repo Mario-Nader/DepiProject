@@ -18,7 +18,7 @@ driver = '{ODBC Driver 18 for SQL Server}' # May need to change based on your in
 # CSV and Table details
 csv_file_path = 'traffic_data.csv'
 table_name = 'TrafficLog'
-rows_to_upload = 4
+rows_to_upload = 100
 run_interval_seconds = 10 # How many seconds to wait between runs
 
 # --- MAIN UPLOAD FUNCTION ---
