@@ -1,0 +1,731 @@
+--- Starting continuous data upload script ---
+--- A new batch will be uploaded every 10 seconds ---
+--- Press Ctrl+C to stop the script ---
+
+==================================================
+Starting Run #1
+==================================================
+Reading data from traffic_data.csv...
+Selected 100 random rows to upload (Batch #1):
+             Time  Date Day of the week  ...  Total  Traffic Situation  batch_number
+476   11:00:00 PM    14        Saturday  ...     30             normal             1
+454    5:30:00 PM    14        Saturday  ...    181              heavy             1
+227    8:45:00 AM    12        Thursday  ...    146             normal             1
+4352   8:00:00 AM    24         Tuesday  ...    203              heavy             1
+4478   3:30:00 PM    25       Wednesday  ...    101                low             1
+
+[5 rows x 10 columns]
+
+Connecting to Azure SQL Database...
+Connection successful.
+Inserting 100 rows...
+Data uploaded successfully!
+
+--- Run #1 complete. Waiting for 10 seconds... ---
+
+==================================================
+Starting Run #2
+==================================================
+Reading data from traffic_data.csv...
+Selected 100 random rows to upload (Batch #2):
+             Time  Date Day of the week  ...  Total  Traffic Situation  batch_number
+2161  12:15:00 PM     1       Wednesday  ...     94             normal             2
+2399  11:45:00 PM     3          Friday  ...     42             normal             2
+395    2:45:00 AM    14        Saturday  ...     36             normal             2
+2349  11:15:00 AM     3          Friday  ...    208              heavy             2
+809   10:15:00 AM    18       Wednesday  ...     86             normal             2
+
+[5 rows x 10 columns]
+
+Connecting to Azure SQL Database...
+Connection successful.
+Inserting 100 rows...
+Data uploaded successfully!
+
+--- Run #2 complete. Waiting for 10 seconds... ---
+
+==================================================
+Starting Run #3
+==================================================
+Reading data from traffic_data.csv...
+Selected 100 random rows to upload (Batch #3):
+             Time  Date Day of the week  ...  Total  Traffic Situation  batch_number
+3468   3:00:00 AM    15          Sunday  ...     41             normal             3
+4015   7:45:00 PM    20          Friday  ...     37                low             3
+5051   2:45:00 PM    31         Tuesday  ...    109             normal             3
+2751   3:45:00 PM     7         Tuesday  ...    145             normal             3
+4273  12:15:00 PM    23          Monday  ...    109             normal             3
+
+[5 rows x 10 columns]
+
+Connecting to Azure SQL Database...
+Connection successful.
+Inserting 100 rows...
+Data uploaded successfully!
+
+--- Run #3 complete. Waiting for 10 seconds... ---
+
+==================================================
+Starting Run #4
+==================================================
+Reading data from traffic_data.csv...
+Selected 100 random rows to upload (Batch #4):
+             Time  Date Day of the week  ...  Total  Traffic Situation  batch_number
+4997   1:15:00 AM    31         Tuesday  ...     41             normal             4
+3621   5:15:00 PM    16          Monday  ...    151             normal             4
+1026   4:30:00 PM    20          Friday  ...    128             normal             4
+3535   7:45:00 PM    15          Sunday  ...    125             normal             4
+3068  11:00:00 PM    10         Tuesday  ...     34                low             4
+
+[5 rows x 10 columns]
+
+Connecting to Azure SQL Database...
+Connection successful.
+Inserting 100 rows...
+Data uploaded successfully!
+
+--- Run #4 complete. Waiting for 10 seconds... ---
+
+==================================================
+Starting Run #5
+==================================================
+Reading data from traffic_data.csv...
+Selected 100 random rows to upload (Batch #5):
+             Time  Date Day of the week  ...  Total  Traffic Situation  batch_number
+1896   6:00:00 PM    29          Sunday  ...    183              heavy             5
+1974   1:30:00 PM    30          Monday  ...     49                low             5
+113    4:15:00 AM    11       Wednesday  ...     98             normal             5
+440    2:00:00 PM    14        Saturday  ...    141             normal             5
+4031  11:45:00 PM    20          Friday  ...     39             normal             5
+
+[5 rows x 10 columns]
+
+Connecting to Azure SQL Database...
+Connection successful.
+Inserting 100 rows...
+Data uploaded successfully!
+
+--- Run #5 complete. Waiting for 10 seconds... ---
+
+==================================================
+Starting Run #6
+==================================================
+Reading data from traffic_data.csv...
+Selected 100 random rows to upload (Batch #6):
+             Time  Date Day of the week  ...  Total  Traffic Situation  batch_number
+4690   8:30:00 PM    27          Friday  ...     46                low             6
+5280  12:00:00 AM     3          Friday  ...     45             normal             6
+4746  10:30:00 AM    28        Saturday  ...    118               high             6
+625   12:15:00 PM    16          Monday  ...    103             normal             6
+1992   6:00:00 PM    30          Monday  ...    170              heavy             6
+
+[5 rows x 10 columns]
+
+Connecting to Azure SQL Database...
+Connection successful.
+Inserting 100 rows...
+Data uploaded successfully!
+
+--- Run #6 complete. Waiting for 10 seconds... ---
+
+==================================================
+Starting Run #7
+==================================================
+Reading data from traffic_data.csv...
+Selected 100 random rows to upload (Batch #7):
+             Time  Date Day of the week  ...  Total  Traffic Situation  batch_number
+955   10:45:00 PM    19        Thursday  ...     40             normal             7
+5234  12:30:00 PM     2        Thursday  ...    104             normal             7
+3773   7:15:00 AM    18       Wednesday  ...    172              heavy             7
+5864   2:00:00 AM     9        Thursday  ...     49             normal             7
+512    8:00:00 AM    15          Sunday  ...    123             normal             7
+
+[5 rows x 10 columns]
+
+Connecting to Azure SQL Database...
+Connection successful.
+Inserting 100 rows...
+Data uploaded successfully!
+
+--- Run #7 complete. Waiting for 10 seconds... ---
+
+==================================================
+Starting Run #8
+==================================================
+Reading data from traffic_data.csv...
+Selected 100 random rows to upload (Batch #8):
+             Time  Date Day of the week  ...  Total  Traffic Situation  batch_number
+4610  12:30:00 AM    27          Friday  ...     46             normal             8
+4328   2:00:00 AM    24         Tuesday  ...     55             normal             8
+2944   4:00:00 PM     9        Thursday  ...    188              heavy             8
+4464  12:00:00 PM    25       Wednesday  ...    103             normal             8
+4114   8:30:00 PM    21          Sunday  ...    159             normal             8
+
+[5 rows x 10 columns]
+
+Connecting to Azure SQL Database...
+Connection successful.
+Inserting 100 rows...
+Data uploaded successfully!
+
+--- Run #8 complete. Waiting for 10 seconds... ---
+
+==================================================
+Starting Run #9
+==================================================
+Reading data from traffic_data.csv...
+Selected 100 random rows to upload (Batch #9):
+             Time  Date Day of the week  ...  Total  Traffic Situation  batch_number
+556    7:00:00 PM    15          Sunday  ...    146             normal             9
+5311   7:45:00 AM     3          Friday  ...     81                low             9
+2791   1:45:00 AM     8       Wednesday  ...     37             normal             9
+1728  12:00:00 AM    28        Saturday  ...     46             normal             9
+4836   9:00:00 AM    29          Sunday  ...    170              heavy             9
+
+[5 rows x 10 columns]
+
+Connecting to Azure SQL Database...
+Connection successful.
+Inserting 100 rows...
+Data uploaded successfully!
+
+--- Run #9 complete. Waiting for 10 seconds... ---
+
+==================================================
+Starting Run #10
+==================================================
+Reading data from traffic_data.csv...
+Selected 100 random rows to upload (Batch #10):
+             Time  Date Day of the week  ...  Total  Traffic Situation  batch_number
+378   10:30:00 PM    13          Friday  ...     47             normal            10
+2347  10:45:00 AM     3          Friday  ...    193              heavy            10
+3501  11:15:00 AM    15          Sunday  ...     74             normal            10
+3720   6:00:00 PM    17         Tuesday  ...    197              heavy            10
+289   12:15:00 AM    13          Friday  ...     46             normal            10
+
+[5 rows x 10 columns]
+
+Connecting to Azure SQL Database...
+Connection successful.
+Inserting 100 rows...
+Data uploaded successfully!
+
+--- Run #10 complete. Waiting for 10 seconds... ---
+
+==================================================
+Starting Run #11
+==================================================
+Reading data from traffic_data.csv...
+Selected 100 random rows to upload (Batch #11):
+            Time  Date Day of the week  ...  Total  Traffic Situation  batch_number
+1938  4:30:00 AM    30          Monday  ...    113             normal            11
+8     2:00:00 AM    10         Tuesday  ...     33             normal            11
+5143  1:45:00 PM     1       Wednesday  ...    165               high            11
+1935  3:45:00 AM    30          Monday  ...     40             normal            11
+3708  3:00:00 PM    17         Tuesday  ...    179              heavy            11
+
+[5 rows x 10 columns]
+
+Connecting to Azure SQL Database...
+Connection successful.
+Inserting 100 rows...
+Data uploaded successfully!
+
+--- Run #11 complete. Waiting for 10 seconds... ---
+
+==================================================
+Starting Run #12
+==================================================
+Reading data from traffic_data.csv...
+Selected 100 random rows to upload (Batch #12):
+            Time  Date Day of the week  ...  Total  Traffic Situation  batch_number
+2024  2:00:00 AM    31         Tuesday  ...     52             normal            12
+405   5:15:00 AM    14        Saturday  ...    121             normal            12
+4354  8:30:00 AM    24         Tuesday  ...    190              heavy            12
+3680  8:00:00 AM    17         Tuesday  ...    189              heavy            12
+448   4:00:00 PM    14        Saturday  ...    173              heavy            12
+
+[5 rows x 10 columns]
+
+Connecting to Azure SQL Database...
+Connection successful.
+Inserting 100 rows...
+Data uploaded successfully!
+
+--- Run #12 complete. Waiting for 10 seconds... ---
+
+==================================================
+Starting Run #13
+==================================================
+Reading data from traffic_data.csv...
+Selected 100 random rows to upload (Batch #13):
+             Time  Date Day of the week  ...  Total  Traffic Situation  batch_number
+2588  11:00:00 PM     5          Sunday  ...     49             normal            13
+733    3:15:00 PM    17         Tuesday  ...    134               high            13
+1380   9:00:00 AM    24         Tuesday  ...    122             normal            13
+1140   9:00:00 PM    21        Saturday  ...    111                low            13
+1473   8:15:00 AM    25       Wednesday  ...    127             normal            13
+
+[5 rows x 10 columns]
+
+Connecting to Azure SQL Database...
+Connection successful.
+Inserting 100 rows...
+Data uploaded successfully!
+
+--- Run #13 complete. Waiting for 10 seconds... ---
+
+==================================================
+Starting Run #14
+==================================================
+Reading data from traffic_data.csv...
+Selected 100 random rows to upload (Batch #14):
+            Time  Date Day of the week  ...  Total  Traffic Situation  batch_number
+3703  1:45:00 PM    17         Tuesday  ...    123               high            14
+1224  6:00:00 PM    22          Sunday  ...    182              heavy            14
+3294  7:30:00 AM    13          Friday  ...     52                low            14
+2093  7:15:00 PM    31         Tuesday  ...    101                low            14
+4823  5:45:00 AM    29          Sunday  ...    153             normal            14
+
+[5 rows x 10 columns]
+
+Connecting to Azure SQL Database...
+Connection successful.
+Inserting 100 rows...
+Data uploaded successfully!
+
+--- Run #14 complete. Waiting for 10 seconds... ---
+
+==================================================
+Starting Run #15
+==================================================
+Reading data from traffic_data.csv...
+Selected 100 random rows to upload (Batch #15):
+             Time  Date Day of the week  ...  Total  Traffic Situation  batch_number
+4638   7:30:00 AM    27          Friday  ...     56                low            15
+2768   8:00:00 PM     7         Tuesday  ...    111             normal            15
+331   10:45:00 AM    13          Friday  ...    163             normal            15
+5880   6:00:00 AM     9        Thursday  ...    203              heavy            15
+3078   1:30:00 AM    11       Wednesday  ...     43             normal            15
+
+[5 rows x 10 columns]
+
+Connecting to Azure SQL Database...
+Connection successful.
+Inserting 100 rows...
+Data uploaded successfully!
+
+--- Run #15 complete. Waiting for 10 seconds... ---
+
+==================================================
+Starting Run #16
+==================================================
+Reading data from traffic_data.csv...
+Selected 100 random rows to upload (Batch #16):
+             Time  Date Day of the week  ...  Total  Traffic Situation  batch_number
+1965  11:15:00 AM    30          Monday  ...     93             normal            16
+5428   1:00:00 PM     4        Saturday  ...     69             normal            16
+5267   8:45:00 PM     2        Thursday  ...    166               high            16
+270    7:30:00 PM    12        Thursday  ...    114             normal            16
+5222   9:30:00 AM     2        Thursday  ...     83             normal            16
+
+[5 rows x 10 columns]
+
+Connecting to Azure SQL Database...
+Connection successful.
+Inserting 100 rows...
+Data uploaded successfully!
+
+--- Run #16 complete. Waiting for 10 seconds... ---
+
+==================================================
+Starting Run #17
+==================================================
+Reading data from traffic_data.csv...
+Selected 100 random rows to upload (Batch #17):
+             Time  Date Day of the week  ...  Total  Traffic Situation  batch_number
+1835   2:45:00 AM    29          Sunday  ...     55             normal            17
+2048   8:00:00 AM    31         Tuesday  ...    148             normal            17
+1920  12:00:00 AM    30          Monday  ...     49             normal            17
+2365   3:15:00 PM     3          Friday  ...     87                low            17
+163    4:45:00 PM    11       Wednesday  ...    168              heavy            17
+
+[5 rows x 10 columns]
+
+Connecting to Azure SQL Database...
+Connection successful.
+Inserting 100 rows...
+Data uploaded successfully!
+
+--- Run #17 complete. Waiting for 10 seconds... ---
+
+==================================================
+Starting Run #18
+==================================================
+Reading data from traffic_data.csv...
+Selected 100 random rows to upload (Batch #18):
+             Time  Date Day of the week  ...  Total  Traffic Situation  batch_number
+4631   5:45:00 AM    27          Friday  ...    114             normal            18
+1030   5:30:00 PM    20          Friday  ...    102                low            18
+5678   3:30:00 AM     7         Tuesday  ...     48             normal            18
+1780   1:00:00 PM    28        Saturday  ...     54             normal            18
+2059  10:45:00 AM    31         Tuesday  ...     87             normal            18
+
+[5 rows x 10 columns]
+
+Connecting to Azure SQL Database...
+Connection successful.
+Inserting 100 rows...
+Data uploaded successfully!
+
+--- Run #18 complete. Waiting for 10 seconds... ---
+
+==================================================
+Starting Run #19
+==================================================
+Reading data from traffic_data.csv...
+Selected 100 random rows to upload (Batch #19):
+             Time  Date Day of the week  ...  Total  Traffic Situation  batch_number
+4601  10:15:00 PM    26        Thursday  ...     52             normal            19
+4647   9:45:00 AM    27          Friday  ...    216              heavy            19
+2737  12:15:00 PM     7         Tuesday  ...    101             normal            19
+596    5:00:00 AM    16          Monday  ...    111             normal            19
+3328   4:00:00 PM    13          Friday  ...    104                low            19
+
+[5 rows x 10 columns]
+
+Connecting to Azure SQL Database...
+Connection successful.
+Inserting 100 rows...
+Data uploaded successfully!
+
+--- Run #19 complete. Waiting for 10 seconds... ---
+
+==================================================
+Starting Run #20
+==================================================
+Reading data from traffic_data.csv...
+Selected 100 random rows to upload (Batch #20):
+             Time  Date Day of the week  ...  Total  Traffic Situation  batch_number
+1763   8:45:00 AM    28        Saturday  ...    178              heavy            20
+3592  10:00:00 AM    16          Monday  ...     57                low            20
+123    6:45:00 AM    11       Wednesday  ...    139             normal            20
+1055  11:45:00 PM    20          Friday  ...     52             normal            20
+1327   7:45:00 PM    23          Monday  ...    102             normal            20
+
+[5 rows x 10 columns]
+
+Connecting to Azure SQL Database...
+Connection successful.
+Inserting 100 rows...
+Data uploaded successfully!
+
+--- Run #20 complete. Waiting for 10 seconds... ---
+
+==================================================
+Starting Run #21
+==================================================
+Reading data from traffic_data.csv...
+Selected 100 random rows to upload (Batch #21):
+             Time  Date Day of the week  ...  Total  Traffic Situation  batch_number
+2439   9:45:00 AM     4        Saturday  ...     65                low            21
+1307   2:45:00 PM    23          Monday  ...     59             normal            21
+5097   2:15:00 AM     1       Wednesday  ...     33             normal            21
+955   10:45:00 PM    19        Thursday  ...     40             normal            21
+2722   8:30:00 AM     7         Tuesday  ...    146             normal            21
+
+[5 rows x 10 columns]
+
+Connecting to Azure SQL Database...
+Connection successful.
+Inserting 100 rows...
+Data uploaded successfully!
+
+--- Run #21 complete. Waiting for 10 seconds... ---
+
+==================================================
+Starting Run #22
+==================================================
+Reading data from traffic_data.csv...
+Selected 100 random rows to upload (Batch #22):
+             Time  Date Day of the week  ...  Total  Traffic Situation  batch_number
+4196   5:00:00 PM    22        Saturday  ...    191              heavy            22
+3576   6:00:00 AM    16          Monday  ...    196              heavy            22
+400    4:00:00 AM    14        Saturday  ...     87             normal            22
+472   10:00:00 PM    14        Saturday  ...     44             normal            22
+4011   6:45:00 PM    20          Friday  ...     87                low            22
+
+[5 rows x 10 columns]
+
+Connecting to Azure SQL Database...
+Connection successful.
+Inserting 100 rows...
+Data uploaded successfully!
+
+--- Run #22 complete. Waiting for 10 seconds... ---
+
+==================================================
+Starting Run #23
+==================================================
+Reading data from traffic_data.csv...
+Selected 100 random rows to upload (Batch #23):
+             Time  Date Day of the week  ...  Total  Traffic Situation  batch_number
+667   10:45:00 PM    16          Monday  ...     32             normal            23
+1826  12:30:00 AM    29          Sunday  ...     45             normal            23
+5542   5:30:00 PM     5          Sunday  ...    221              heavy            23
+5762  12:30:00 AM     8       Wednesday  ...     31                low            23
+4595   8:45:00 PM    26        Thursday  ...    150             normal            23
+
+[5 rows x 10 columns]
+
+Connecting to Azure SQL Database...
+Connection successful.
+Inserting 100 rows...
+Data uploaded successfully!
+
+--- Run #23 complete. Waiting for 10 seconds... ---
+
+==================================================
+Starting Run #24
+==================================================
+Reading data from traffic_data.csv...
+Selected 100 random rows to upload (Batch #24):
+             Time  Date Day of the week  ...  Total  Traffic Situation  batch_number
+5609  10:15:00 AM     6          Monday  ...    180              heavy            24
+4295   5:45:00 PM    23          Monday  ...    177              heavy            24
+4773   5:15:00 PM    28        Saturday  ...    170              heavy            24
+5455   7:45:00 PM     4        Saturday  ...    132             normal            24
+5834   6:30:00 PM     8       Wednesday  ...    199              heavy            24
+
+[5 rows x 10 columns]
+
+Connecting to Azure SQL Database...
+Connection successful.
+Inserting 100 rows...
+Data uploaded successfully!
+
+--- Run #24 complete. Waiting for 10 seconds... ---
+
+==================================================
+Starting Run #25
+==================================================
+Reading data from traffic_data.csv...
+Selected 100 random rows to upload (Batch #25):
+             Time  Date Day of the week  ...  Total  Traffic Situation  batch_number
+4544   8:00:00 AM    26        Thursday  ...    206              heavy            25
+2207  11:45:00 PM     1       Wednesday  ...     42             normal            25
+1506   4:30:00 PM    25       Wednesday  ...    183              heavy            25
+4297   6:15:00 PM    23          Monday  ...    206              heavy            25
+4326   1:30:00 AM    24         Tuesday  ...     42             normal            25
+
+[5 rows x 10 columns]
+
+Connecting to Azure SQL Database...
+Connection successful.
+Inserting 100 rows...
+Data uploaded successfully!
+
+--- Run #25 complete. Waiting for 10 seconds... ---
+
+==================================================
+Starting Run #26
+==================================================
+Reading data from traffic_data.csv...
+Selected 100 random rows to upload (Batch #26):
+             Time  Date Day of the week  ...  Total  Traffic Situation  batch_number
+1731  12:45:00 AM    28        Saturday  ...     39             normal            26
+1740   3:00:00 AM    28        Saturday  ...     40             normal            26
+4597   9:15:00 PM    26        Thursday  ...    136             normal            26
+2976  12:00:00 AM    10         Tuesday  ...     39                low            26
+3194   6:30:00 AM    12        Thursday  ...    161             normal            26
+
+[5 rows x 10 columns]
+
+Connecting to Azure SQL Database...
+Connection successful.
+Inserting 100 rows...
+Data uploaded successfully!
+
+--- Run #26 complete. Waiting for 10 seconds... ---
+
+==================================================
+Starting Run #27
+==================================================
+Reading data from traffic_data.csv...
+Selected 100 random rows to upload (Batch #27):
+             Time  Date Day of the week  ...  Total  Traffic Situation  batch_number
+1330   8:30:00 PM    23          Monday  ...    130               high            27
+3680   8:00:00 AM    17         Tuesday  ...    189              heavy            27
+4605  11:15:00 PM    26        Thursday  ...     47             normal            27
+2471   5:45:00 PM     4        Saturday  ...    203              heavy            27
+2790   1:30:00 AM     8       Wednesday  ...     39             normal            27
+
+[5 rows x 10 columns]
+
+Connecting to Azure SQL Database...
+Connection successful.
+Inserting 100 rows...
+Data uploaded successfully!
+
+--- Run #27 complete. Waiting for 10 seconds... ---
+
+==================================================
+Starting Run #28
+==================================================
+Reading data from traffic_data.csv...
+Selected 100 random rows to upload (Batch #28):
+             Time  Date Day of the week  ...  Total  Traffic Situation  batch_number
+4569   2:15:00 PM    26        Thursday  ...    138               high            28
+2105  10:15:00 PM    31         Tuesday  ...     39             normal            28
+1789   3:15:00 PM    28        Saturday  ...    107             normal            28
+4030  11:30:00 PM    20          Friday  ...     35                low            28
+5372  11:00:00 PM     3          Friday  ...     53             normal            28
+
+[5 rows x 10 columns]
+
+Connecting to Azure SQL Database...
+Connection successful.
+Inserting 100 rows...
+Data uploaded successfully!
+
+--- Run #28 complete. Waiting for 10 seconds... ---
+
+==================================================
+Starting Run #29
+==================================================
+Reading data from traffic_data.csv...
+Selected 100 random rows to upload (Batch #29):
+             Time  Date Day of the week  ...  Total  Traffic Situation  batch_number
+5406   7:30:00 AM     4        Saturday  ...    180              heavy            29
+3446   9:30:00 PM    14        Saturday  ...    106                low            29
+1225   6:15:00 PM    22          Sunday  ...    166             normal            29
+1053  11:15:00 PM    20          Friday  ...     40             normal            29
+2028   3:00:00 AM    31         Tuesday  ...     34             normal            29
+
+[5 rows x 10 columns]
+
+Connecting to Azure SQL Database...
+Connection successful.
+Inserting 100 rows...
+Data uploaded successfully!
+
+--- Run #29 complete. Waiting for 10 seconds... ---
+
+==================================================
+Starting Run #30
+==================================================
+Reading data from traffic_data.csv...
+Selected 100 random rows to upload (Batch #30):
+             Time  Date Day of the week  ...  Total  Traffic Situation  batch_number
+2246   9:30:00 AM     2        Thursday  ...     73             normal            30
+2684  11:00:00 PM     6          Monday  ...     51             normal            30
+4556  11:00:00 AM    26        Thursday  ...     98             normal            30
+3912   6:00:00 PM    19        Thursday  ...    187              heavy            30
+966    1:30:00 AM    20          Friday  ...     35             normal            30
+
+[5 rows x 10 columns]
+
+Connecting to Azure SQL Database...
+Connection successful.
+Inserting 100 rows...
+Data uploaded successfully!
+
+--- Run #30 complete. Waiting for 10 seconds... ---
+
+==================================================
+Starting Run #31
+==================================================
+Reading data from traffic_data.csv...
+Selected 100 random rows to upload (Batch #31):
+             Time  Date Day of the week  ...  Total  Traffic Situation  batch_number
+2219   2:45:00 AM     2        Thursday  ...     47             normal            31
+1356   3:00:00 AM    24         Tuesday  ...     48             normal            31
+2129   4:15:00 AM     1       Wednesday  ...     97                low            31
+335   11:45:00 AM    13          Friday  ...    189              heavy            31
+4850  12:30:00 PM    29          Sunday  ...    108             normal            31
+
+[5 rows x 10 columns]
+
+Connecting to Azure SQL Database...
+Connection successful.
+Inserting 100 rows...
+Data uploaded successfully!
+
+--- Run #31 complete. Waiting for 10 seconds... ---
+
+==================================================
+Starting Run #32
+==================================================
+Reading data from traffic_data.csv...
+Selected 100 random rows to upload (Batch #32):
+             Time  Date Day of the week  ...  Total  Traffic Situation  batch_number
+24     6:00:00 AM    10         Tuesday  ...    152             normal            32
+2950   5:30:00 PM     9        Thursday  ...    170              heavy            32
+5615  11:45:00 AM     6          Monday  ...     61             normal            32
+513    8:15:00 AM    15          Sunday  ...    131             normal            32
+2017  12:15:00 AM    31         Tuesday  ...     45             normal            32
+
+[5 rows x 10 columns]
+
+Connecting to Azure SQL Database...
+Connection successful.
+Inserting 100 rows...
+Data uploaded successfully!
+
+--- Run #32 complete. Waiting for 10 seconds... ---
+
+==================================================
+Starting Run #33
+==================================================
+Reading data from traffic_data.csv...
+Selected 100 random rows to upload (Batch #33):
+             Time  Date Day of the week  ...  Total  Traffic Situation  batch_number
+2188   7:00:00 PM     1       Wednesday  ...    166             normal            33
+2275   4:45:00 PM     2        Thursday  ...    190              heavy            33
+1722  10:30:00 PM    27          Friday  ...     42             normal            33
+1280   8:00:00 AM    23          Monday  ...    174              heavy            33
+5083  10:45:00 PM    31         Tuesday  ...     56             normal            33
+
+[5 rows x 10 columns]
+
+Connecting to Azure SQL Database...
+Connection successful.
+Inserting 100 rows...
+Data uploaded successfully!
+
+--- Run #33 complete. Waiting for 10 seconds... ---
+
+==================================================
+Starting Run #34
+==================================================
+Reading data from traffic_data.csv...
+Selected 100 random rows to upload (Batch #34):
+             Time  Date Day of the week  ...  Total  Traffic Situation  batch_number
+1687   1:45:00 PM    27          Friday  ...    191              heavy            34
+1651   4:45:00 AM    27          Friday  ...    119               high            34
+5655   9:45:00 PM     6          Monday  ...    136             normal            34
+2444  11:00:00 AM     4        Saturday  ...    110             normal            34
+2112  12:00:00 AM     1       Wednesday  ...     45             normal            34
+
+[5 rows x 10 columns]
+
+Connecting to Azure SQL Database...
+Connection successful.
+Inserting 100 rows...
+Data uploaded successfully!
+
+--- Run #34 complete. Waiting for 10 seconds... ---
+
+==================================================
+Starting Run #35
+==================================================
+Reading data from traffic_data.csv...
+Selected 100 random rows to upload (Batch #35):
+             Time  Date Day of the week  ...  Total  Traffic Situation  batch_number
+2975  11:45:00 PM     9        Thursday  ...     36             normal            35
+1052  11:00:00 PM    20          Friday  ...     34             normal            35
+1982   3:30:00 PM    30          Monday  ...     75                low            35
+5333   1:15:00 PM     3          Friday  ...    254              heavy            35
+529   12:15:00 PM    15          Sunday  ...     89             normal            35
+
+[5 rows x 10 columns]

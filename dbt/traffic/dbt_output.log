@@ -1,0 +1,176 @@
+Running dbt run...
+[0m12:22:30  Running with dbt=1.10.15
+[0m12:22:34  Registered adapter: sqlserver=1.9.0
+[0m12:22:37  Found 1 model, 1 source, 535 macros
+[0m12:22:37  
+[0m12:22:37  Concurrency: 1 threads (target='dev')
+[0m12:22:37  
+[0m12:22:38  1 of 1 START sql incremental model dbo.stg_traffic ............................. [RUN]
+[0m12:22:38  1 of 1 OK created sql incremental model dbo.stg_traffic ........................ [[32mOK[0m in 0.37s]
+[0m12:22:38  
+[0m12:22:38  Finished running 1 incremental model in 0 hours 0 minutes and 0.55 seconds (0.55s).
+[0m12:22:38  
+[0m12:22:38  [32mCompleted successfully[0m
+[0m12:22:38  
+[0m12:22:38  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+Sleeping for 30 seconds...
+Running dbt run...
+[0m12:23:13  Running with dbt=1.10.15
+[0m12:23:13  Registered adapter: sqlserver=1.9.0
+[0m12:23:14  Found 1 model, 1 source, 535 macros
+[0m12:23:14  
+[0m12:23:14  Concurrency: 1 threads (target='dev')
+[0m12:23:14  
+[0m12:23:14  1 of 1 START sql incremental model dbo.stg_traffic ............................. [RUN]
+[0m12:23:15  1 of 1 OK created sql incremental model dbo.stg_traffic ........................ [[32mOK[0m in 0.33s]
+[0m12:23:15  
+[0m12:23:15  Finished running 1 incremental model in 0 hours 0 minutes and 0.50 seconds (0.50s).
+[0m12:23:15  
+[0m12:23:15  [32mCompleted successfully[0m
+[0m12:23:15  
+[0m12:23:15  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+Sleeping for 30 seconds...
+Running dbt run...
+[0m12:23:49  Running with dbt=1.10.15
+[0m12:23:50  Registered adapter: sqlserver=1.9.0
+[0m12:23:51  Found 1 model, 1 source, 535 macros
+[0m12:23:51  
+[0m12:23:51  Concurrency: 1 threads (target='dev')
+[0m12:23:51  
+[0m12:23:51  1 of 1 START sql incremental model dbo.stg_traffic ............................. [RUN]
+[0m12:23:51  1 of 1 OK created sql incremental model dbo.stg_traffic ........................ [[32mOK[0m in 0.31s]
+[0m12:23:51  
+[0m12:23:51  Finished running 1 incremental model in 0 hours 0 minutes and 0.43 seconds (0.43s).
+[0m12:23:51  
+[0m12:23:51  [32mCompleted successfully[0m
+[0m12:23:51  
+[0m12:23:51  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+Sleeping for 30 seconds...
+Running dbt run...
+[0m12:24:26  Running with dbt=1.10.15
+[0m12:24:26  Registered adapter: sqlserver=1.9.0
+[0m12:24:27  Found 1 model, 1 source, 535 macros
+[0m12:24:27  
+[0m12:24:27  Concurrency: 1 threads (target='dev')
+[0m12:24:27  
+[0m12:24:28  1 of 1 START sql incremental model dbo.stg_traffic ............................. [RUN]
+[0m12:24:28  1 of 1 OK created sql incremental model dbo.stg_traffic ........................ [[32mOK[0m in 0.34s]
+[0m12:24:28  
+[0m12:24:28  Finished running 1 incremental model in 0 hours 0 minutes and 0.54 seconds (0.54s).
+[0m12:24:28  
+[0m12:24:28  [32mCompleted successfully[0m
+[0m12:24:28  
+[0m12:24:28  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+Sleeping for 30 seconds...
+Running dbt run...
+[0m12:25:02  Running with dbt=1.10.15
+[0m12:25:03  Registered adapter: sqlserver=1.9.0
+[0m12:25:04  Found 1 model, 1 source, 535 macros
+[0m12:25:04  
+[0m12:25:04  Concurrency: 1 threads (target='dev')
+[0m12:25:04  
+[0m12:25:04  1 of 1 START sql incremental model dbo.stg_traffic ............................. [RUN]
+[0m12:25:11  1 of 1 OK created sql incremental model dbo.stg_traffic ........................ [[32mOK[0m in 6.53s]
+[0m12:25:11  
+[0m12:25:11  Finished running 1 incremental model in 0 hours 0 minutes and 6.90 seconds (6.90s).
+[0m12:25:11  
+[0m12:25:11  [32mCompleted successfully[0m
+[0m12:25:11  
+[0m12:25:11  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+Sleeping for 30 seconds...
+Running dbt run...
+[0m12:25:45  Running with dbt=1.10.15
+[0m12:25:46  Registered adapter: sqlserver=1.9.0
+[0m12:25:47  Found 1 model, 1 source, 535 macros
+[0m12:25:47  
+[0m12:25:47  Concurrency: 1 threads (target='dev')
+[0m12:25:47  
+[0m12:25:47  1 of 1 START sql incremental model dbo.stg_traffic ............................. [RUN]
+[0m12:25:48  1 of 1 OK created sql incremental model dbo.stg_traffic ........................ [[32mOK[0m in 0.31s]
+[0m12:25:48  
+[0m12:25:48  Finished running 1 incremental model in 0 hours 0 minutes and 0.50 seconds (0.50s).
+[0m12:25:48  
+[0m12:25:48  [32mCompleted successfully[0m
+[0m12:25:48  
+[0m12:25:48  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+Sleeping for 30 seconds...
+Running dbt run...
+[0m12:26:21  Running with dbt=1.10.15
+[0m12:26:22  Registered adapter: sqlserver=1.9.0
+[0m12:26:23  Found 1 model, 1 source, 535 macros
+[0m12:26:23  
+[0m12:26:23  Concurrency: 1 threads (target='dev')
+[0m12:26:23  
+[0m12:26:23  1 of 1 START sql incremental model dbo.stg_traffic ............................. [RUN]
+[0m12:26:23  1 of 1 OK created sql incremental model dbo.stg_traffic ........................ [[32mOK[0m in 0.29s]
+[0m12:26:23  
+[0m12:26:23  Finished running 1 incremental model in 0 hours 0 minutes and 0.48 seconds (0.48s).
+[0m12:26:23  
+[0m12:26:23  [32mCompleted successfully[0m
+[0m12:26:23  
+[0m12:26:23  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+Sleeping for 30 seconds...
+Running dbt run...
+[0m12:26:57  Running with dbt=1.10.15
+[0m12:26:58  Registered adapter: sqlserver=1.9.0
+[0m12:26:58  Found 1 model, 1 source, 535 macros
+[0m12:26:58  
+[0m12:26:58  Concurrency: 1 threads (target='dev')
+[0m12:26:58  
+[0m12:26:59  1 of 1 START sql incremental model dbo.stg_traffic ............................. [RUN]
+[0m12:26:59  1 of 1 OK created sql incremental model dbo.stg_traffic ........................ [[32mOK[0m in 0.27s]
+[0m12:26:59  
+[0m12:26:59  Finished running 1 incremental model in 0 hours 0 minutes and 0.40 seconds (0.40s).
+[0m12:26:59  
+[0m12:26:59  [32mCompleted successfully[0m
+[0m12:26:59  
+[0m12:26:59  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+Sleeping for 30 seconds...
+Running dbt run...
+[0m12:27:33  Running with dbt=1.10.15
+[0m12:27:33  Registered adapter: sqlserver=1.9.0
+[0m12:27:34  Found 1 model, 1 source, 535 macros
+[0m12:27:34  
+[0m12:27:34  Concurrency: 1 threads (target='dev')
+[0m12:27:34  
+[0m12:27:34  1 of 1 START sql incremental model dbo.stg_traffic ............................. [RUN]
+[0m12:27:35  1 of 1 OK created sql incremental model dbo.stg_traffic ........................ [[32mOK[0m in 0.35s]
+[0m12:27:35  
+[0m12:27:35  Finished running 1 incremental model in 0 hours 0 minutes and 0.54 seconds (0.54s).
+[0m12:27:35  
+[0m12:27:35  [32mCompleted successfully[0m
+[0m12:27:35  
+[0m12:27:35  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+Sleeping for 30 seconds...
+Running dbt run...
+[0m12:28:08  Running with dbt=1.10.15
+[0m12:28:09  Registered adapter: sqlserver=1.9.0
+[0m12:28:10  Found 1 model, 1 source, 535 macros
+[0m12:28:10  
+[0m12:28:10  Concurrency: 1 threads (target='dev')
+[0m12:28:10  
+[0m12:28:10  1 of 1 START sql incremental model dbo.stg_traffic ............................. [RUN]
+[0m12:28:10  1 of 1 OK created sql incremental model dbo.stg_traffic ........................ [[32mOK[0m in 0.25s]
+[0m12:28:10  
+[0m12:28:10  Finished running 1 incremental model in 0 hours 0 minutes and 0.36 seconds (0.36s).
+[0m12:28:10  
+[0m12:28:10  [32mCompleted successfully[0m
+[0m12:28:10  
+[0m12:28:10  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+Sleeping for 30 seconds...
+Running dbt run...
+[0m12:28:44  Running with dbt=1.10.15
+[0m12:28:45  Registered adapter: sqlserver=1.9.0
+[0m12:28:45  Found 1 model, 1 source, 535 macros
+[0m12:28:45  
+[0m12:28:45  Concurrency: 1 threads (target='dev')
+[0m12:28:45  
+[0m12:28:46  1 of 1 START sql incremental model dbo.stg_traffic ............................. [RUN]
+[0m12:28:46  1 of 1 OK created sql incremental model dbo.stg_traffic ........................ [[32mOK[0m in 0.29s]
+[0m12:28:46  
+[0m12:28:46  Finished running 1 incremental model in 0 hours 0 minutes and 0.50 seconds (0.50s).
+[0m12:28:46  
+[0m12:28:46  [32mCompleted successfully[0m
+[0m12:28:46  
+[0m12:28:46  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+Sleeping for 30 seconds...

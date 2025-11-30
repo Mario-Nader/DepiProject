@@ -8,11 +8,11 @@ from dotenv import load_dotenv
 load_dotenv() 
 
 # Azure SQL Database connection details (REPLACE WITH YOURS)
-server = 'traffic-project22.database.windows.net' # <-- REPLACE
-database = 'traffic' # <-- REPLACE
-username = 'kero' # <-- REPLACE
-password = 'Kk123456' # Gets password from .env file
-driver = '{ODBC Driver 18 for SQL Server}' # May need to change based on your install
+server = 'localhost'
+database = 'traffic'
+username = 'dbtuser'
+password = 'AM.most123'
+driver = '{ODBC Driver 17 for SQL Server}'
 
 
 # CSV and Table details
@@ -23,7 +23,7 @@ run_interval_seconds = 10 # How many seconds to wait between runs
 
 # --- MAIN UPLOAD FUNCTION ---
 # We put the core logic in a function to make the loop cleaner
-def upload_random_traffic_data():
+def upload_random_traffic_data(batch_num):
     """
     Reads the CSV, selects random rows, and uploads them to Azure SQL.
     """
@@ -32,7 +32,11 @@ def upload_random_traffic_data():
         print(f"Reading data from {csv_file_path}...")
         df = pd.read_csv(csv_file_path)
         random_rows = df.sample(n=rows_to_upload)
-        print(f"Selected {len(random_rows)} random rows to upload:")
+        
+        # Add batch_number column
+        random_rows['batch_number'] = batch_num
+        
+        print(f"Selected {len(random_rows)} random rows to upload (Batch #{batch_num}):")
         print(random_rows.head())
 
     except FileNotFoundError:
@@ -43,7 +47,7 @@ def upload_random_traffic_data():
         return
 
     # 2. Connect to the database and upload data
-    connection_string = f'DRIVER={driver};SERVER=tcp:{server};PORT=1433;DATABASE={database};UID={username};PWD={password}'
+    connection_string = f'DRIVER={driver};SERVER={server};DATABASE={database};UID={username};PWD={password}'
     
     try:
         print("\nConnecting to Azure SQL Database...")
@@ -59,7 +63,8 @@ def upload_random_traffic_data():
             CREATE TABLE [dbo].[{table_name}](
                 [Time] [time] NULL, [Date] [int] NULL, [DayOfTheWeek] [nvarchar](20) NULL,
                 [CarCount] [int] NULL, [BikeCount] [int] NULL, [BusCount] [int] NULL,
-                [TruckCount] [int] NULL, [Total] [int] NULL, [TrafficSituation] [nvarchar](50) NULL
+                [TruckCount] [int] NULL, [Total] [int] NULL, [TrafficSituation] [nvarchar](50) NULL,
+                [batch_number] [int] NULL
             )
             END
             """
@@ -68,7 +73,7 @@ def upload_random_traffic_data():
 
             # 4. Insert the random rows into the table
             print(f"Inserting {len(random_rows)} rows...")
-            insert_sql = "INSERT INTO {} VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);".format(table_name)
+            insert_sql = "INSERT INTO {} VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);".format(table_name)
             
             for index, row in random_rows.iterrows():
                 cursor.execute(insert_sql, tuple(row))
@@ -97,8 +102,8 @@ if __name__ == "__main__":
             print(f"Starting Run #{run_count}")
             print("="*50)
             
-            # Call the main function to do the work
-            upload_random_traffic_data()
+            # Call the main function to do the work, passing the batch number
+            upload_random_traffic_data(run_count)
             
             print(f"\n--- Run #{run_count} complete. Waiting for {run_interval_seconds} seconds... ---")
             time.sleep(run_interval_seconds) # Wait for 10 seconds
@@ -111,4 +116,3 @@ if __name__ == "__main__":
             # Catch any other unexpected errors to prevent the loop from crashing
             print(f"A critical error occurred: {e}. The script will try again after the interval.")
             time.sleep(run_interval_seconds)
-            

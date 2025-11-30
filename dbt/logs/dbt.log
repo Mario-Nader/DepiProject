@@ -64,3 +64,140 @@ Runtime Error
 [0m22:52:15.924930 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BE5B6DDE20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BE5BAA77A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BE5BEA6BD0>]}
 [0m22:52:15.924930 [debug] [MainThread]: Flushing usage events
 [0m22:52:17.245440 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:54:29.454385 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FAED5C9C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FAED5CA090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FAED854B10>]}
+
+
+============================== 17:54:29.465516 | d66fcf54-a948-4003-8cb2-3fe9619941f9 ==============================
+[0m17:54:29.465516 [info ] [MainThread]: Running with dbt=1.10.15
+[0m17:54:29.468535 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'target_path': 'None', 'profiles_dir': 'C:\\Users\\ammar\\Desktop\\dbt', 'use_colors': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'static_parser': 'True', 'partial_parse': 'True', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'log_path': 'logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'version_check': 'True', 'use_experimental_parser': 'False', 'introspect': 'True', 'quiet': 'False', 'empty': 'None', 'log_cache_events': 'False', 'debug': 'False', 'no_print': 'None', 'invocation_command': 'dbt debug', 'printer_width': '80', 'write_json': 'True'}
+[0m17:54:29.511437 [info ] [MainThread]: dbt version: 1.10.15
+[0m17:54:29.513442 [info ] [MainThread]: python version: 3.11.0
+[0m17:54:29.514441 [info ] [MainThread]: python path: C:\Users\ammar\Desktop\dbt\venv\Scripts\python.exe
+[0m17:54:29.515437 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m17:54:35.363937 [info ] [MainThread]: Using profiles dir at C:\Users\ammar\Desktop\dbt
+[0m17:54:35.365934 [info ] [MainThread]: Using profiles.yml file at C:\Users\ammar\Desktop\dbt\profiles.yml
+[0m17:54:35.367409 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\ammar\Desktop\dbt\dbt_project.yml
+[0m17:54:35.369426 [info ] [MainThread]: adapter type: sqlserver
+[0m17:54:35.370427 [info ] [MainThread]: adapter version: 1.9.0
+[0m17:54:35.371427 [info ] [MainThread]: Configuration:
+[0m17:54:35.372425 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m17:54:35.373425 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m17:54:35.374425 [info ] [MainThread]: Required dependencies:
+[0m17:54:35.375930 [debug] [MainThread]: Executing "git --help"
+[0m17:54:35.452469 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m17:54:35.453454 [debug] [MainThread]: STDERR: "b''"
+[0m17:54:35.454454 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m17:54:35.456723 [info ] [MainThread]: Connection:
+[0m17:54:35.457706 [info ] [MainThread]:   server: localhost
+[0m17:54:35.458705 [info ] [MainThread]:   database: traffic
+[0m17:54:35.459721 [info ] [MainThread]:   schema: dbo
+[0m17:54:35.460753 [info ] [MainThread]:   UID: sa
+[0m17:54:35.462772 [info ] [MainThread]:   client_id: None
+[0m17:54:35.463764 [info ] [MainThread]:   authentication: sql
+[0m17:54:35.465782 [info ] [MainThread]:   encrypt: True
+[0m17:54:35.466783 [info ] [MainThread]:   trust_cert: True
+[0m17:54:35.467783 [info ] [MainThread]:   retries: 3
+[0m17:54:35.468783 [info ] [MainThread]:   login_timeout: 0
+[0m17:54:35.469781 [info ] [MainThread]:   query_timeout: 0
+[0m17:54:35.470781 [info ] [MainThread]:   trace_flag: False
+[0m17:54:35.471781 [info ] [MainThread]:   port: 1433
+[0m17:54:35.472781 [info ] [MainThread]: Registered adapter: sqlserver=1.9.0
+[0m17:54:36.102158 [debug] [MainThread]: Acquiring new sqlserver connection 'debug'
+[0m17:54:36.103158 [debug] [MainThread]: Using sqlserver connection "debug"
+[0m17:54:36.104157 [debug] [MainThread]: On debug: select 1 as id
+[0m17:54:36.105142 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:54:36.105142 [debug] [MainThread]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 17 for SQL Server};SERVER=localhost,1433;Database=traffic;UID={sa};PWD=***;encrypt=Yes;TrustServerCertificate=Yes;APP=dbt-sqlserver/1.9.0
+[0m17:54:51.927122 [debug] [MainThread]: sqlserver adapter: Got a retryable error when attempting to open a sqlserver connection.
+3 attempts remaining. Retrying in 1 seconds.
+Error:
+('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.\r\n (10061) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (10061)')
+[0m17:54:52.929428 [debug] [MainThread]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 17 for SQL Server};SERVER=localhost,1433;Database=traffic;UID={sa};PWD=***;encrypt=Yes;TrustServerCertificate=Yes;APP=dbt-sqlserver/1.9.0
+[0m17:55:08.663870 [debug] [MainThread]: sqlserver adapter: Got a retryable error when attempting to open a sqlserver connection.
+2 attempts remaining. Retrying in 1 seconds.
+Error:
+('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.\r\n (10061) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (10061)')
+[0m17:55:09.666346 [debug] [MainThread]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 17 for SQL Server};SERVER=localhost,1433;Database=traffic;UID={sa};PWD=***;encrypt=Yes;TrustServerCertificate=Yes;APP=dbt-sqlserver/1.9.0
+[0m17:55:25.337038 [debug] [MainThread]: sqlserver adapter: Got a retryable error when attempting to open a sqlserver connection.
+1 attempts remaining. Retrying in 1 seconds.
+Error:
+('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.\r\n (10061) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (10061)')
+[0m17:55:26.339880 [debug] [MainThread]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 17 for SQL Server};SERVER=localhost,1433;Database=traffic;UID={sa};PWD=***;encrypt=Yes;TrustServerCertificate=Yes;APP=dbt-sqlserver/1.9.0
+[0m17:55:42.057213 [debug] [MainThread]: fabric adapter: Error running SQL: select 1 as id
+[0m17:55:42.059210 [debug] [MainThread]: fabric adapter: Rolling back transaction.
+[0m17:55:42.060214 [debug] [MainThread]: On debug: No close available on handle
+[0m17:55:42.062218 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m17:55:42.065221 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m17:55:42.067212 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\ammar\Desktop\dbt\dbt_project.yml> not found
+
+[0m17:55:42.069237 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.\r\n (10061) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (10061)')
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m17:55:42.074212 [debug] [MainThread]: Command `dbt debug` failed at 17:55:42.074212 after 72.76 seconds
+[0m17:55:42.076216 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m17:55:42.077212 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FAED87A810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FAE6E14950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FAEEC84190>]}
+[0m17:55:42.080232 [debug] [MainThread]: Flushing usage events
+[0m17:55:43.196814 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:24:26.299439 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B1FB26B0D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B1FB26BA50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B1F87FEE90>]}
+
+
+============================== 18:24:26.312213 | 64a1a127-615c-44ff-aa63-c5225ab6e77d ==============================
+[0m18:24:26.312213 [info ] [MainThread]: Running with dbt=1.10.15
+[0m18:24:26.314222 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt debug', 'write_json': 'True', 'profiles_dir': 'C:\\Users\\ammar\\Desktop\\dbt', 'cache_selected_only': 'False', 'no_print': 'None', 'warn_error': 'None', 'indirect_selection': 'eager', 'partial_parse': 'True', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_path': 'logs', 'use_experimental_parser': 'False', 'version_check': 'True', 'quiet': 'False', 'introspect': 'True', 'empty': 'None', 'log_cache_events': 'False', 'debug': 'False', 'log_format': 'default', 'use_colors': 'True', 'printer_width': '80', 'target_path': 'None'}
+[0m18:24:26.371321 [info ] [MainThread]: dbt version: 1.10.15
+[0m18:24:26.372302 [info ] [MainThread]: python version: 3.11.0
+[0m18:24:26.373309 [info ] [MainThread]: python path: C:\Users\ammar\Desktop\dbt\venv\Scripts\python.exe
+[0m18:24:26.375305 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m18:24:27.169259 [info ] [MainThread]: Using profiles dir at C:\Users\ammar\Desktop\dbt
+[0m18:24:27.170264 [info ] [MainThread]: Using profiles.yml file at C:\Users\ammar\Desktop\dbt\profiles.yml
+[0m18:24:27.171261 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\ammar\Desktop\dbt\dbt_project.yml
+[0m18:24:27.173267 [info ] [MainThread]: adapter type: sqlserver
+[0m18:24:27.174266 [info ] [MainThread]: adapter version: 1.9.0
+[0m18:24:27.175265 [info ] [MainThread]: Configuration:
+[0m18:24:27.176266 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m18:24:27.177534 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m18:24:27.178561 [info ] [MainThread]: Required dependencies:
+[0m18:24:27.179567 [debug] [MainThread]: Executing "git --help"
+[0m18:24:27.247954 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:24:27.248927 [debug] [MainThread]: STDERR: "b''"
+[0m18:24:27.249932 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:24:27.251279 [info ] [MainThread]: Connection:
+[0m18:24:27.252297 [info ] [MainThread]:   server: localhost
+[0m18:24:27.254299 [info ] [MainThread]:   database: traffic
+[0m18:24:27.255290 [info ] [MainThread]:   schema: dbo
+[0m18:24:27.256120 [info ] [MainThread]:   UID: sa
+[0m18:24:27.257130 [info ] [MainThread]:   client_id: None
+[0m18:24:27.258639 [info ] [MainThread]:   authentication: sql
+[0m18:24:27.259652 [info ] [MainThread]:   encrypt: True
+[0m18:24:27.260652 [info ] [MainThread]:   trust_cert: True
+[0m18:24:27.261652 [info ] [MainThread]:   retries: 3
+[0m18:24:27.262652 [info ] [MainThread]:   login_timeout: 0
+[0m18:24:27.263652 [info ] [MainThread]:   query_timeout: 0
+[0m18:24:27.264652 [info ] [MainThread]:   trace_flag: False
+[0m18:24:27.265655 [info ] [MainThread]:   port: 1433
+[0m18:24:27.266653 [info ] [MainThread]: Registered adapter: sqlserver=1.9.0
+[0m18:24:28.070251 [debug] [MainThread]: Acquiring new sqlserver connection 'debug'
+[0m18:24:28.071251 [debug] [MainThread]: Using sqlserver connection "debug"
+[0m18:24:28.073231 [debug] [MainThread]: On debug: select 1 as id
+[0m18:24:28.074251 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:24:28.075251 [debug] [MainThread]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 17 for SQL Server};SERVER=localhost,1433;Database=traffic;UID={sa};PWD=***;encrypt=Yes;TrustServerCertificate=Yes;APP=dbt-sqlserver/1.9.0
+[0m18:24:43.929529 [debug] [MainThread]: sqlserver adapter: Got a retryable error when attempting to open a sqlserver connection.
+3 attempts remaining. Retrying in 1 seconds.
+Error:
+('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.\r\n (10061) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (10061)')
+[0m18:24:44.932201 [debug] [MainThread]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 17 for SQL Server};SERVER=localhost,1433;Database=traffic;UID={sa};PWD=***;encrypt=Yes;TrustServerCertificate=Yes;APP=dbt-sqlserver/1.9.0
+[0m18:25:00.639513 [debug] [MainThread]: sqlserver adapter: Got a retryable error when attempting to open a sqlserver connection.
+2 attempts remaining. Retrying in 1 seconds.
+Error:
+('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.\r\n (10061) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (10061)')
+[0m18:25:01.642922 [debug] [MainThread]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 17 for SQL Server};SERVER=localhost,1433;Database=traffic;UID={sa};PWD=***;encrypt=Yes;TrustServerCertificate=Yes;APP=dbt-sqlserver/1.9.0
