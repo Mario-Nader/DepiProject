@@ -64,7 +64,7 @@ st.markdown("""
 
 @st.cache_data
 def load_data():
-    server = 'localhost'
+    server = 'depiser'
     database = 'traffic'
     username = 'dbtuser'
     password = 'AM.most123'

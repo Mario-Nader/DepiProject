@@ -3,12 +3,13 @@ traffic:
     dev:
       type: sqlserver
       driver: 'ODBC Driver 17 for SQL Server'
-      server: localhost
+      server: depiser
       port: 1433
       database: traffic
       schema: dbo
       user: dbtuser
       password: 'AM.most123'
-      encrypt: false
-      trust_cert: true
+      encrypt: true
+      trust_cert: false
+      authentication: SqlPassword
   target: dev

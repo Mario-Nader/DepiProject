@@ -8,11 +8,11 @@ from dotenv import load_dotenv
 load_dotenv() 
 
 # Azure SQL Database connection details (REPLACE WITH YOURS)
-server = 'localhost'
+server = 'depiser.database.windows.net'
 database = 'traffic'
 username = 'dbtuser'
 password = 'AM.most123'
-driver = '{ODBC Driver 17 for SQL Server}'
+driver = '{ODBC Driver 18 for SQL Server}'
 
 
 # CSV and Table details
@@ -47,7 +47,15 @@ def upload_random_traffic_data(batch_num):
         return
 
     # 2. Connect to the database and upload data
-    connection_string = f'DRIVER={driver};SERVER={server};DATABASE={database};UID={username};PWD={password}'
+    connection_string = (
+    f"DRIVER={driver};"
+    f"SERVER=tcp:{server},1433;"
+    f"DATABASE={database};"
+    f"UID={username};"
+    f"PWD={password};"
+    f"Encrypt=yes;"
+    f"TrustServerCertificate=no;"
+    )
     
     try:
         print("\nConnecting to Azure SQL Database...")
