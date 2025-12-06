@@ -11,7 +11,7 @@ load_dotenv()
 server = 'depiser.database.windows.net'
 database = 'traffic'
 username = 'dbtuser'
-password = 'AM.most123'
+password = 'aM.most123'
 driver = '{ODBC Driver 18 for SQL Server}'
 
 
