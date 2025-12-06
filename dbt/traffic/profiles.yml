@@ -3,13 +3,12 @@ traffic:
     dev:
       type: sqlserver
       driver: 'ODBC Driver 17 for SQL Server'
-      server: depiser
+      server: depiser.database.windows.net
       port: 1433
       database: traffic
       schema: dbo
-      user: dbtuser
-      password: 'AM.most123'
+      username: dbtuser
+      password: aM.most123
       encrypt: true
       trust_cert: false
-      authentication: SqlPassword
   target: dev

@@ -201,3 +201,18 @@ Error:
 Error:
 ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.\r\n (10061) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (10061)')
 [0m18:25:01.642922 [debug] [MainThread]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 17 for SQL Server};SERVER=localhost,1433;Database=traffic;UID={sa};PWD=***;encrypt=Yes;TrustServerCertificate=Yes;APP=dbt-sqlserver/1.9.0
+[0m23:43:00.604301 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DB855B1390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DB855B3ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DB855B1110>]}
+
+
+============================== 23:43:00.696090 | 9019b8ab-9c0b-4c50-8221-22f921b451da ==============================
+[0m23:43:00.696090 [info ] [MainThread]: Running with dbt=1.10.13
+[0m23:43:00.701086 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'target_path': 'None', 'version_check': 'True', 'invocation_command': 'dbt run', 'log_format': 'default', 'use_colors': 'True', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'use_experimental_parser': 'False', 'empty': 'False', 'printer_width': '80', 'quiet': 'False', 'indirect_selection': 'eager', 'log_path': 'logs', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'profiles_dir': 'C:\\Users\\my\\.dbt'}
+[0m23:43:00.712036 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path D:\try_depi\DepiProject\dbt\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m23:43:00.746963 [debug] [MainThread]: Command `dbt run` failed at 23:43:00.746058 after 0.49 seconds
+[0m23:43:00.756461 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DB8561A410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DB855B0390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DB85616F10>]}
+[0m23:43:00.759463 [debug] [MainThread]: Flushing usage events
+[0m23:43:07.478982 [debug] [MainThread]: An error was encountered while trying to flush usage events

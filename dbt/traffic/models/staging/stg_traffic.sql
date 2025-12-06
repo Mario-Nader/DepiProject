@@ -9,7 +9,7 @@ SELECT
     -- Create a unique ID for the incremental model (including batch_number for uniqueness)
     CONVERT(NVARCHAR(64), HASHBYTES('SHA2_256',
         CONCAT(CONVERT(VARCHAR, [Date], 23), ' ', CONVERT(VARCHAR, [Time], 8), ' ', 
-               CarCount, ' ', BikeCount, ' ', batch_number)
+              CarCount, ' ', BikeCount, ' ', batch_number)
     ), 2) AS unique_row_id,
 
     -- Combine Date and Time into a real timestamp
